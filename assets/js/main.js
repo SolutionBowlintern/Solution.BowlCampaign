@@ -168,7 +168,22 @@
       });
     });
 
-    // Submit function connected to Formspree
+    // =====================================================
+    // Submit function — sends form data to Google Sheets
+    // via a deployed Google Apps Script Web App.
+    //
+    // HOW TO SET UP:
+    // 1. Open Google Sheets → Extensions → Apps Script
+    // 2. Paste the doPost() code (see setup-guide below)
+    // 3. Deploy → New deployment → Web app
+    //    - Execute as: Me
+    //    - Who has access: Anyone
+    // 4. Copy the Web App URL and paste it below.
+    // =====================================================
+
+    // ⚠️  REPLACE THIS with your deployed Google Apps Script URL
+    const GOOGLE_SHEET_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+
     function submitForm() {
       console.log("✅ submitForm started");
 
@@ -187,41 +202,45 @@
       const activeChip = document.querySelector('.sb-chip.active');
       const platform = activeChip ? activeChip.getAttribute('data-val') : 'Not selected';
 
-      const formData = new FormData();
-      formData.append('name', name);
-      formData.append('email', email);
-      formData.append('phone', document.getElementById('phone').value.trim() || '—');
-      formData.append('company', document.getElementById('company').value.trim() || '—');
-      formData.append('platform', platform);
-      formData.append('budget', document.getElementById('budget').value || 'Not selected');
-      formData.append('timeline', document.getElementById('timeline').value || 'Not selected');
-      formData.append('brief', brief);
-      formData.append('designs', document.getElementById('designs').value || 'Not selected');
-      formData.append('source', document.getElementById('source').value || 'Not selected');
-      formData.append('_subject', 'New App Brief from SolutionBowl Landing Page');
+      const payload = {
+        name: name,
+        email: email,
+        phone: document.getElementById('phone').value.trim() || '—',
+        company: document.getElementById('company').value.trim() || '—',
+        platform: platform,
+        budget: document.getElementById('budget').value || 'Not selected',
+        timeline: document.getElementById('timeline').value || 'Not selected',
+        brief: brief,
+        designs: document.getElementById('designs').value || 'Not selected',
+        source: document.getElementById('source').value || 'Not selected'
+      };
 
-      const FORMSPREE_URL = "https://formspree.io/f/xgordvap";
+      // Disable button to prevent double-submit
+      const submitBtn = document.getElementById('sb-submit-btn');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting…';
+      }
 
-      fetch(FORMSPREE_URL, {
+      fetch(GOOGLE_SHEET_URL, {
         method: "POST",
-        body: formData
+        mode: "no-cors",          // Apps Script redirects; no-cors avoids CORS errors
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
       })
-        .then(response => {
-          console.log("Response status:", response.status);
-          if (response.ok) {
-            return response.text();
-          } else {
-            throw new Error("Formspree error: " + response.status);
-          }
-        })
         .then(() => {
-          console.log("✅ Success! Form sent to Formspree");
+          // no-cors returns opaque response, so we assume success
+          console.log("✅ Success! Form data sent to Google Sheets");
           document.getElementById('sb-form').style.display = 'none';
           document.getElementById('sb-success').style.display = 'block';
         })
         .catch(err => {
           console.error("❌ Error:", err);
-          alert("Could not submit. Open F12 → Console and tell me what error you see.");
+          alert("Could not submit. Please check your connection and try again.");
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Submit My App Brief →';
+          }
         });
     }
 
