@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolutionBowl AI — Mobile App Development</title>
+  
+  
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo"><img src="assets/solution-bowls-logo.png" alt="SolutionBowl AI"
+        style="height:42px;width:55px;display:block;object-fit:contain;"></a>
+    <ul class="nav-links">
+      <li><a href="#" onclick="openOfferPopup(event)">The Offer</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+    <a href="#start-project" class="btn btn-primary">Book a Call</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Free UI/UX Design — Limited Slots Open
+          </div>
+          <h1>Build Your Vision <br>
+            <span class="accent-text">We'll design the interface for free.</span>
+          </h1>
+          <p class="hero-sub">We build scalable iOS and Android apps for startups. Start your project today and get your
+            entire UI/UX design suite ($5,000+ value) completely free.</p>
+          <div class="hero-ctas">
+            <a href="#start-project" class="btn btn-primary btn-lg">Start Your App →</a>
+            <a href="#cases" class="btn btn-outline btn-lg">View Our Work</a>
+          </div>
+        </div>
+        <div class="phones fade-in visible">
+          <div class="phone phone-back">
+            <div class="phone-screen">
+              <div class="wire-block wire-1"></div>
+              <div class="wire-block wire-2"></div>
+              <div class="wire-block wire-3"></div>
+              <div class="wire-block wire-4"></div>
+              <div class="wire-block wire-5"></div>
+              <div class="wire-block wire-6"></div>
+            </div>
+          </div>
+          <div class="phone phone-front">
+            <div class="phone-screen">
+              <div class="phone-app-header">
+                <div class="avatar-circle">S</div>
+                <div class="menu-dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="phone-greeting">
+                <h3>Hey, Noah</h3>
+                <p>Your app • 12 active users</p>
+              </div>
+              <div class="phone-card">
+                <div class="phone-card-title">Today's revenue</div>
+                <div class="phone-card-value">
+                  $<span class="revenue-count" data-target="24812" style="font-size: smaller;">0</span>
+                  <span>+18%</span>
+                </div>
+                <div class="phone-mini-chart">
+                  <div style="height: 40%"></div>
+                  <div style="height: 60%"></div>
+                  <div style="height: 75%"></div>
+                  <div style="height: 90%"></div>
+                  <div style="height: 65%"></div>
+                </div>
+              </div>
+              <div class="phone-cta-bottom">View full dashboard</div>
+            </div>
+          </div>
+          <div class="floating-badge">FREE UI/UX<br>INCLUDED</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK BAR -->
+  <section id="trust" class="tech-marquee">
+    <div class="container">
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="tech-item"><i class="devicon-swift-plain"></i><span>Swift</span></div>
+          <div class="tech-item"><i class="devicon-swiftui-plain"></i><span>SwiftUI</span></div>
+          <div class="tech-item"><i class="devicon-kotlin-plain"></i><span>Kotlin</span></div>
+          <div class="tech-item"><i class="devicon-jetpackcompose-plain"></i><span>Jetpack Compose</span></div>
+          <div class="tech-item"><i class="devicon-flutter-plain"></i><span>Flutter</span></div>
+          <div class="tech-item"><i class="devicon-react-original"></i><span>React Native</span></div>
+          <div class="tech-item"><i class="devicon-nodejs-plain"></i><span>Node.js</span></div>
+          <div class="tech-item"><i class="devicon-firebase-plain"></i><span>Firebase</span></div>
+          <div class="tech-item"><i class="devicon-supabase-plain"></i><span>Supabase</span></div>
+          <div class="tech-item"><i class="devicon-postgresql-plain"></i><span>PostgreSQL</span></div>
+          <div class="tech-item"><i class="devicon-graphql-plain"></i><span>GraphQL</span></div>
+          <div class="tech-item"><i class="devicon-amazonwebservices-original"></i><span>AWS</span></div>
+
+          <!-- duplicate for seamless loop -->
+          <div class="tech-item"><i class="devicon-swift-plain"></i><span>Swift</span></div>
+          <div class="tech-item"><i class="devicon-swiftui-plain"></i><span>SwiftUI</span></div>
+          <div class="tech-item"><i class="devicon-kotlin-plain"></i><span>Kotlin</span></div>
+          <div class="tech-item"><i class="devicon-jetpackcompose-plain"></i><span>Jetpack Compose</span></div>
+          <div class="tech-item"><i class="devicon-flutter-plain"></i><span>Flutter</span></div>
+          <div class="tech-item"><i class="devicon-react-original"></i><span>React Native</span></div>
+          <div class="tech-item"><i class="devicon-nodejs-plain"></i><span>Node.js</span></div>
+          <div class="tech-item"><i class="devicon-firebase-plain"></i><span>Firebase</span></div>
+          <div class="tech-item"><i class="devicon-supabase-plain"></i><span>Supabase</span></div>
+          <div class="tech-item"><i class="devicon-postgresql-plain"></i><span>PostgreSQL</span></div>
+          <div class="tech-item"><i class="devicon-graphql-plain"></i><span>GraphQL</span></div>
+          <div class="tech-item"><i class="devicon-amazonwebservices-original"></i><span>AWS</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section id="problem" class="section">
+    <div class="section-num">01</div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label">The Problem</div>
+      <h2>Building a great app<br>shouldn't cost a fortune.</h2>
+      <p style="margin-top:1rem;max-width:550px;">Most founders hit the same walls. You've probably run into at least
+        two of these already.</p>
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="card-icon">💸</div>
+          <h3>UI/UX is expensive — separately</h3>
+          <p>Good design agencies charge $3–10K before a single line of code is written. Most teams skip it and pay
+            later in user churn.</p>
+        </div>
+        <div class="card reveal reveal-delay-1">
+          <div class="card-icon">📉</div>
+          <h3>Poor UX = users drop off</h3>
+          <p>88% of users won't return after a bad experience. An app that looks or feels clunky is dead on arrival —
+            regardless of features.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="card-icon">🐢</div>
+          <h3>Design and dev work in silos</h3>
+          <p>When designers and developers aren't aligned, you get late revisions, scope creep, and a product that
+            launches 3 months behind schedule.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <div class="card-icon">🔀</div>
+          <h3>Fragmented teams, fragmented product</h3>
+          <p>Stitching together a designer, a dev agency, and a PM is costly, slow, and riddled with miscommunication.
+            There's a better way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section id="solution" class="section">
+    <div class="section-num">02</div>
+    <div class="container">
+      <div class="solution-grid">
+        <div style="position:relative;z-index:1;">
+          <div class="section-label">The Solution</div>
+          <h2>One team. Design + Dev. Zero gaps.</h2>
+          <p style="margin-top:1rem;">SolutionBowl_AI handles UI/UX and development under one roof — so your app is
+            built right the first time, not retrofitted after launch.</p>
+          <div class="feature-list">
+            <div class="feature-item reveal">
+              <div class="feature-check">✓</div>
+              <div class="feature-content">
+                <h4>Integrated design-to-development workflow</h4>
+                <p>Designers and engineers work together from day one. No handoff chaos, no lost context.</p>
+              </div>
+            </div>
+            <div class="feature-item reveal reveal-delay-1">
+              <div class="feature-check">✓</div>
+              <div class="feature-content">
+                <h4>Mobile-first, cross-platform builds</h4>
+                <p>React Native and Flutter for iOS + Android. One codebase, two platforms, full performance.</p>
+              </div>
+            </div>
+            <div class="feature-item reveal reveal-delay-2">
+              <div class="feature-check">✓</div>
+              <div class="feature-content">
+                <h4>Faster execution, fewer revisions</h4>
+                <p>When design and code speak the same language, you ship weeks faster and spend less on rework.</p>
+              </div>
+            </div>
+            <div class="feature-item reveal reveal-delay-3">
+              <div class="feature-check">✓</div>
+              <div class="feature-content">
+                <h4>Business-first thinking, not just tech</h4>
+                <p>We understand product-market fit. We build apps that convert, retain, and grow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solution-visual reveal" style="position:relative;z-index:1;">
+          <div
+            style="font-family:sans-serif;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">
+            Our Integrated Stack</div>
+          <div class="sol-workflow">
+            <div class="sol-step">
+              <div class="sol-step-icon">🎯</div>
+              <div class="sol-step-text">
+                <h4>Product Strategy</h4>
+                <p>Market research, user personas, feature prioritization</p>
+              </div>
+            </div>
+            <div class="sol-step">
+              <div class="sol-step-icon">🎨</div>
+              <div class="sol-step-text">
+                <h4>UI/UX Design</h4>
+                <p>Wireframes → Figma prototypes → design system</p>
+              </div>
+            </div>
+            <div class="sol-step">
+              <div class="sol-step-icon">⚙️</div>
+              <div class="sol-step-text">
+                <h4>App Development</h4>
+                <p>React Native / Flutter / Swift / Kotlin</p>
+              </div>
+            </div>
+            <div class="sol-step">
+              <div class="sol-step-icon">🚀</div>
+              <div class="sol-step-text">
+                <h4>QA + Launch</h4>
+                <p>App Store + Play Store submission, full QA cycle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFER POPUP -->
+  
+
+  <div id="offer-popup" class="modal-overlay" style="display: none;">
+    <div class="modal-content offer-card">
+      <button class="modal-close" onclick="closeOfferPopup()" aria-label="Close">×</button>
+      <div class="offer-grid">
+        <div>
+          <div class="offer-tag">🎁 Limited Offer</div>
+          <div class="offer-title">Get Free UI/UX Design<br>With Your App Project.</div>
+          <p style="margin-top:0.8rem;">Every mobile app development project comes with a complete UI/UX design —
+            built by our in-house design team. No separate vendor. No extra invoice.</p>
+          <div class="offer-items">
+            <div class="offer-item"><span class="offer-check">✓</span> User research & persona mapping</div>
+            <div class="offer-item"><span class="offer-check">✓</span> Full wireframes (low + high fidelity)</div>
+            <div class="offer-item"><span class="offer-check">✓</span> Interactive Figma prototype</div>
+            <div class="offer-item"><span class="offer-check">✓</span> Complete design system & component library</div>
+            <div class="offer-item"><span class="offer-check">✓</span> App icon + onboarding flow</div>
+            <div class="offer-item"><span class="offer-check">✓</span> Unlimited revisions before dev handoff</div>
+          </div>
+          <a href="#start-project" class="btn btn-primary btn-lg" style="margin-top:2rem;"
+            onclick="closeOfferPopup()">Claim Your Free Design →</a>
+        </div>
+        <div class="offer-value-box">
+          <div class="offer-value-label">Market value of UI/UX</div>
+          <div class="offer-strikethrough">$5,000</div>
+          <div class="offer-value-amount">$0</div>
+          <div class="offer-value-sub">When bundled with your app development project.<br>Same quality. No compromise.
+          </div>
+          <div style="border-top:1px solid var(--border);padding-top:1.2rem;margin-top:1.2rem;">
+            <div style="font-size:0.78rem;color:var(--muted);line-height:1.6;">Why free? Our design and dev teams work
+              together. We don't pay external design vendors — and we pass that saving directly to you.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- PROCESS -->
+  <section id="process" class="section">
+    <div class="section-num">03</div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label">How It Works</div>
+      <h2>From brief to launch.<br>5 steps. No surprises.</h2>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-circle">01</div>
+          <div class="step-title">Discovery</div>
+          <div class="step-desc">We learn your users, goals, and market. Define the MVP scope together.</div>
+        </div>
+        <div class="process-step reveal reveal-delay-1">
+          <div class="step-circle" style="border-color:var(--accent);color:var(--accent);">02</div>
+          <div class="step-title">UI/UX Design</div>
+          <div class="step-desc">Wireframes, prototype, and design system — all included, approved by you.</div>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="step-circle">03</div>
+          <div class="step-title">Development</div>
+          <div class="step-desc">Engineers build from the approved designs. Weekly demos, no black boxes.</div>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="step-circle">04</div>
+          <div class="step-title">QA & Testing</div>
+          <div class="step-desc">Device testing, performance checks, bug squashing before it touches users.</div>
+        </div>
+        <div class="process-step reveal reveal-delay-4">
+          <div class="step-circle">05</div>
+          <div class="step-title">Launch</div>
+          <div class="step-desc">App Store + Play Store submission. Post-launch support included.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section id="benefits" class="section">
+    <div class="section-num">04</div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label">Why It Works</div>
+      <h2>Built to last,<br>not just to launch.</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-num">01</div>
+          <h3>Faster time to market</h3>
+          <p>Integrated design and dev means no handoff delays. Most apps go from kickoff to launch in 8–12 weeks.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-1">
+          <div class="benefit-num">02</div>
+          <h3>Better user retention</h3>
+          <p>Apps built with proper UX retain 2–3× more users in the first 30 days. Good design isn't cosmetic — it's
+            strategic.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-2">
+          <div class="benefit-num">03</div>
+          <h3>Scalable architecture</h3>
+          <p>We build on proven stacks — ready for 10 users or 100,000. No rewrites when you start growing.</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-num">04</div>
+          <h3>Cross-platform from day one</h3>
+          <p>One codebase, iOS and Android. No choosing between audiences. No doubling the budget.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-1">
+          <div class="benefit-num">05</div>
+          <h3>Clean, intuitive UI</h3>
+          <p>Design that's been tested with real users, not just looks good in a Figma file. Built for how people
+            actually use apps.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-2">
+          <div class="benefit-num">06</div>
+          <h3>Business-focused builds</h3>
+          <p>Every feature is justified against your business goals. We push back on scope bloat so you don't pay for
+            things users won't use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects We're Proud Of -->
+  <section id="cases" class="section">
+    <div class="section-num">05</div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label">Projects We're Proud Of</div>
+      <h2>Real apps. Real results.</h2>
+      <div class="cases-grid">
+        <div class="case-card">
+          <div class="case-visual v1">
+            <div class="case-phone-mini">
+              <div class="case-phone-mini-screen">
+                <div class="bar short"></div>
+                <div class="bar med"></div>
+                <div class="bar block"></div>
+                <div class="bar short"></div>
+                <div class="bar med"></div>
+              </div>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="case-tag">🇸🇦 F&B Marketplace</div>
+            <div class="case-name serif">Qahwa</div>
+            <div class="case-row">
+              <div class="case-row-label">Problem</div>
+              <div class="case-row-value">Saudi coffee roasters had no digital-first marketplace. Existing options were
+                clunky global apps in English.</div>
+            </div>
+            <div class="case-row">
+              <div class="case-row-label">What we built</div>
+              <div class="case-row-value">Native iOS + Android with Arabic-first UX, vendor portal, real-time order
+                tracking.</div>
+            </div>
+            <div class="case-row">
+              <div class="case-row-label">Result</div>
+              <div class="case-row-value"><strong>12-week delivery.</strong> Live in 4 Saudi cities. Zero scope creep.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-visual v2">
+            <div class="case-phone-mini">
+              <div class="case-phone-mini-screen">
+                <div class="bar short"></div>
+                <div class="bar med"></div>
+                <div class="bar block"></div>
+                <div class="bar short"></div>
+                <div class="bar med"></div>
+              </div>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="case-tag">🇦🇪 Workforce Management</div>
+            <div class="case-name serif">FieldForce</div>
+            <div class="case-row">
+              <div class="case-row-label">Problem</div>
+              <div class="case-row-value">Construction client managing 400+ daily workers on spreadsheets and WhatsApp.
+              </div>
+            </div>
+            <div class="case-row">
+              <div class="case-row-label">What we built</div>
+              <div class="case-row-value">Cross-platform app with attendance, payroll triggers, site-level dashboards,
+                offline sync.</div>
+            </div>
+            <div class="case-row">
+              <div class="case-row-label">Result</div>
+              <div class="case-row-value"><strong>80% reduction</strong> in payroll disputes. 3 sites onboarded in month
+                one.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-visual v3">
+            <div class="case-phone-mini">
+              <div class="case-phone-mini-screen">
+                <div class="bar short"></div>
+                <div class="bar med"></div>
+                <div class="bar block"></div>
+                <div class="bar short"></div>
+                <div class="bar med"></div>
+              </div>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="case-tag">🇮🇳 Manufacturing ERP</div>
+            <div class="case-name serif">ModulERP Mobile</div>
+            <div class="case-row">
+              <div class="case-row-label">Problem</div>
+              <div class="case-row-value">Indian manufacturers needed floor-level ERP access, not laptop-bound
+                dashboards.</div>
+            </div>
+            <div class="case-row">
+              <div class="case-row-label">What we built</div>
+              <div class="case-row-value">Companion app for shop-floor staff: production tracking, QC entries, inventory
+                scans.</div>
+            </div>
+            <div class="case-row">
+              <div class="case-row-label">Result</div>
+              <div class="case-row-value"><strong>6-week build.</strong> Rolled out across 3 plants. ~14 hrs/week saved
+                per plant.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section">
+    <div class="section-num">06</div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label">What Clients Say</div>
+      <h2>Don't take our word for it.</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <span class="quote-mark">"</span>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">We saved $3.5K by not hiring a separate design agency. More importantly, the app
+            actually works — our onboarding drop-off went from 65% to 18% after launch.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:var(--accent);">CB</div>
+            <div>
+              <div class="author-name">Charlie Brown</div>
+              <div class="author-role">Founder, HealthTrack Australia</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <span class="quote-mark">"</span>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">I've worked with 4 dev agencies before. SolutionBowl is the first one that pushed
+            back on my feature list intelligently and delivered exactly what we needed, nothing more.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:var(--accent2);">CW</div>
+            <div>
+              <div class="author-name">Charoltte Wilson</div>
+              <div class="author-role">CPO, Lurnr EdTech</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <span class="quote-mark">"</span>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">10 weeks from kickoff to App Store approval. The Figma prototype alone was good
+            enough to raise our seed round. The actual app was even better.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#85A1AD;">NS</div>
+            <div>
+              <div class="author-name">Noah Smith</div>
+              <div class="author-role">CEO, PayRoute</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="section-num">07</div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label">FAQ</div>
+      <h2>The questions everyone asks<br>before they book.</h2>
+      <div class="faq-grid" id="faq-grid">
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Is the UI/UX design really free? <span class="faq-toggle">+</span></div>
+          <div class="faq-a">Yes — completely. UI/UX design is included in every app development engagement at no
+            additional charge. We're able to offer this because our design and engineering teams work under the same
+            roof. There's no third-party design vendor to pay.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">What's the typical project timeline? <span class="faq-toggle">+</span></div>
+          <div class="faq-a">Most MVPs take 8–12 weeks from kickoff to App Store submission. Complex apps with
+            integrations or custom backends may take 14–18 weeks. We give you a firm timeline after the discovery call —
+            not a range we inflate later.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Which platforms do you build for? <span class="faq-toggle">+</span></div>
+          <div class="faq-a">iOS and Android, always together. We build cross-platform with React Native or Flutter by
+            default — one codebase, both platforms, native performance. If your project requires native Swift or Kotlin,
+            we handle that too.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">How is the project priced? <span class="faq-toggle">+</span></div>
+          <div class="faq-a">Fixed scope, fixed price. We agree on deliverables before we start, and you pay in
+            milestones — not hourly. No surprise invoices. No scope creep unless you request it. We'll give you a
+            detailed quote after the discovery call, not a vague estimate.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">What happens after the app launches? <span class="faq-toggle">+</span></div>
+          <div class="faq-a">Every project includes 60 days of post-launch support — bug fixes, crash monitoring, and
+            minor improvements. After that, we offer affordable retainer plans for ongoing development and feature
+            expansion.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Do I need a technical background to work with you? <span class="faq-toggle">+</span></div>
+          <div class="faq-a">Not at all. Most of our clients are non-technical founders and product managers. We
+            translate your business requirements into technical specs — you focus on the product, we handle the
+            engineering. Weekly video updates keep you in the loop without requiring technical knowledge.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+
+
+  
+
+  <div class="sb-form-wrap" id="start-project">
+    <div class="sb-badge">Start Your Project</div>
+    <h2 class="sb-title">Tell us about <span>your app</span></h2>
+    <p class="sb-subtitle">We'll review your brief and reach out within 24 hours — no spam, no pressure.</p>
+
+    <div id="sb-form">
+      <div class="sb-grid">
+        <div class="sb-field">
+          <label class="sb-label">Your Name *</label>
+          <input class="sb-input" id="name" type="text" placeholder="John Smith" />
+        </div>
+        <div class="sb-field">
+          <label class="sb-label">Email *</label>
+          <input class="sb-input" id="email" type="email" placeholder="john@live.com" />
+        </div>
+        <div class="sb-field">
+          <label class="sb-label">WhatsApp / Phone</label>
+          <input class="sb-input" id="phone" type="tel" placeholder="+61 7 1234 -5678" />
+        </div>
+        <div class="sb-field">
+          <label class="sb-label">Company / Startup</label>
+          <input class="sb-input" id="company" type="text" placeholder="Acme Inc." />
+        </div>
+      </div>
+
+      <hr class="sb-divider" />
+
+      <div class="sb-grid">
+        <div class="sb-field full">
+          <label class="sb-label">Platform Needed</label>
+          <div class="sb-platforms" id="platforms">
+            <div class="sb-chip active" data-val="iOS">iOS</div>
+            <div class="sb-chip" data-val="Android">Android</div>
+            <div class="sb-chip" data-val="Both">Both (iOS + Android)</div>
+            <div class="sb-chip" data-val="Web App">Web App</div>
+            <div class="sb-chip" data-val="Not Sure">Not Sure Yet</div>
+          </div>
+        </div>
+
+        <div class="sb-field">
+          <label class="sb-label">Budget Range</label>
+          <select class="sb-select" id="budget">
+            <option value="">Select range</option>
+            <option>Under $5,000</option>
+            <option>$5,000 – $15,000</option>
+            <option>$15,000 – $30,000</option>
+            <option>$30,000 – $60,000</option>
+            <option>$60,000+</option>
+            <option>To be discussed</option>
+          </select>
+        </div>
+
+        <div class="sb-field">
+          <label class="sb-label">Target Timeline</label>
+          <select class="sb-select" id="timeline">
+            <option value="">Select timeline</option>
+            <option>ASAP (under 4 weeks)</option>
+            <option>1 – 3 months</option>
+            <option>3 – 6 months</option>
+            <option>6+ months</option>
+            <option>Flexible / Not sure</option>
+          </select>
+        </div>
+
+        <div class="sb-field full">
+          <label class="sb-label">App Idea / Brief *</label>
+          <textarea class="sb-textarea" id="brief"
+            placeholder="Describe what your app does, who it's for, and what problem it solves. The more detail, the better."></textarea>
+        </div>
+
+        <div class="sb-field full">
+          <label class="sb-label">Do you have existing designs or a reference?</label>
+          <select class="sb-select" id="designs">
+            <option value="">Select one</option>
+            <option>Yes — I have Figma/XD designs ready</option>
+            <option>Partially — rough wireframes only</option>
+            <option>No — I need full UX/UI design too</option>
+            <option>I have a reference app I want to model</option>
+          </select>
+        </div>
+
+        <div class="sb-field full">
+          <label class="sb-label">How did you hear about us?</label>
+          <select class="sb-select" id="source">
+            <option value="">Select one</option>
+            <option>Google Search</option>
+            <option>LinkedIn</option>
+            <option>Upwork / Freelance platform</option>
+            <option>Referral from someone</option>
+            <option>Social media / Instagram</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <button type="button" class="sb-submit" id="sb-submit-btn">Submit My App Brief →</button>
+      <p class="sb-footer">Your info is never shared. We'll respond within 24 hours.</p>
+    </div>
+
+    <div class="sb-success" id="sb-success">
+      <div class="sb-success-icon">✓</div>
+      <h3>Brief received!</h3>
+      <p>We'll review your project and get back to you within 24 hours.<br>Check your inbox for a confirmation.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/solution-bowls-logo.png" alt="SolutionBowl AI"
+            style="height:48px;width:auto;display:block;margin-bottom:0.5rem;">
+          <p>End-to-end mobile app development with integrated UI/UX design. Built for founders who need to ship fast
+            and ship right.</p>
+          <div style="display:flex;gap:0.8rem;margin-top:1.2rem;align-items:center;">
+            <!-- Twitter -->
+            <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter"
+              style="color:var(--muted);width:18px;height:18px;display:inline-flex;transition:color .2s;"
+              onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--muted)'">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22 5.92c-.74.33-1.53.55-2.36.65a4.1 4.1 0 0 0 1.8-2.27 8.2 8.2 0 0 1-2.6.99A4.08 4.08 0 0 0 12 8.47c0 .32.03.63.1.93A11.6 11.6 0 0 1 3.15 4.9a4.06 4.06 0 0 0 1.26 5.44 4.05 4.05 0 0 1-1.85-.51v.05c0 2 1.44 3.67 3.34 4.05-.35.1-.72.15-1.1.15-.27 0-.53-.03-.78-.07a4.09 4.09 0 0 0 3.82 2.83A8.2 8.2 0 0 1 2 19.54 11.57 11.57 0 0 0 8.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.3 8.3 0 0 0 22 5.92z" />
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/company/solution-bowl/" target="_blank" aria-label="LinkedIn"
+              style="color:var(--muted);width:18px;height:18px;display:inline-flex;transition:color .2s;"
+              onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--muted)'">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M6.94 6.5A2.44 2.44 0 1 1 2.06 6.5a2.44 2.44 0 0 1 4.88 0zM3 9h4v12H3zM10 9h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4z" />
+              </svg>
+            </a>
+
+            <!-- Whatsapp -->
+            <a href="https://wa.me/918882958753" target="_blank" aria-label="Whatsapp"
+              style="color:var(--muted);width:18px;height:18px;display:inline-flex;transition:color .2s;"
+              onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--muted)'">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.3-.149-1.777-.878-2.046-.978-.269-.099-.465-.148-.661.148-.197.297-.762.962-.934 1.16-.172.199-.344.223-.644.075-.3-.15-1.265-.467-2.41-1.485-.89-.795-1.492-1.775-1.666-2.074-.174-.3-.019-.462.13-.61.135-.133.301-.352.451-.527.149-.174.198-.299.299-.497.101-.199.05-.371-.025-.521-.075-.148-.661-1.597-.905-2.184-.237-.57-.48-.493-.661-.503-.17-.008-.364-.01-.557-.01-.193 0-.508.073-.774.36-.266.288-1.016.993-1.016 2.422 0 1.429 1.04 2.81 1.185 3.01.145.199 2.046 3.12 4.958 4.377.693.3 1.234.478 1.656.613.696.222 1.33.191 1.83.116.558-.084 1.716-.701 1.958-1.378.242-.678.242-1.259.17-1.377-.072-.119-.266-.19-.566-.34zM12.01 21c-1.623 0-3.21-.424-4.607-1.231L4 20.94l1.192-4.359A8.954 8.954 0 0 1 3.94 12c0-4.963 4.04-9 9-9s9 4.037 9 9-4.04 9-9 9z" />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/solutionbowl.india/" target="_blank" aria-label="Instagram"
+              style="color:var(--muted);width:18px;height:18px;display:inline-flex;transition:color .2s;"
+              onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--muted)'">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm6.2-1.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1zM12 9a3 3 0 1 1-3 3 3 3 0 0 1 3-3z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="#">Mobile App Development</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">MVP Development</a></li>
+            <li><a href="#">App Redesign</a></li>
+            <li><a href="#">Post-Launch Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="https://solutionbowl.ai/about">About Us</a></li>
+            <li><a href="#cases">Projects We're Proud Of</a></li>
+            <li><a href="https://solutionbowl.ai/blog">Blog</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="mailto:contactus@solutionbowl.com">contactus@solutionbowl.com</a></li>
+            <li><a href="#">+91 8882958753</a></li>
+            <li><a href="#">Unit 306, Tower B4, SPAZE ITECH PARK, Sohna - Gurgaon Rd, Block S, Sector 49, Gurugram,
+                Haryana 122018</a></li>
+            <li style="margin-top:0.8rem;"><a href="#start-project" style="color:var(--accent);font-weight:600;">Book a
+                Call
+                →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SolutionBowl AI. All rights reserved.</span>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="#" style="color:var(--muted);text-decoration:none;font-size:0.82rem;">Privacy Policy</a>
+          <a href="#" style="color:var(--muted);text-decoration:none;font-size:0.82rem;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TWEAKS PANEL -->
+  <div id="tweaks-panel">
+    <h6>Tweaks</h6>
+    <div class="tweak-row">
+      <label>Accent Color</label>
+      <input type="color" id="tweak-accent" value="#4dc8f0" onchange="applyAccent(this.value)">
+    </div>
+    <div class="tweak-row">
+      <label>Hero Headline</label>
+      <select onchange="applyHeadline(this.value)">
+        <option value="0">Build Apps Users Love. Ship Faster.</option>
+        <option value="1">Your App, Designed & Built in 10 Weeks.</option>
+        <option value="2">Stop Paying Twice. Get Design + Dev Together.</option>
+      </select>
+    </div>
+    <div class="tweak-row">
+      <label>Primary CTA Text</label>
+      <select onchange="applyCTA(this.value)">
+        <option value="Book a Free Call →">Book a Free Call →</option>
+        <option value="Get a Free Quote →">Get a Free Quote →</option>
+        <option value="Start Your App →">Start Your App →</option>
+      </select>
+    </div>
+  </div>
+
+  
+
+  <template id="__bundler_thumbnail">
+    <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+      <rect width="120" height="80" fill="#0f1420" />
+      <rect x="12" y="16" width="50" height="6" rx="3" fill="#4dc8f0" opacity="0.9" />
+      <rect x="12" y="26" width="38" height="4" rx="2" fill="#4dc8f0" opacity="0.4" />
+      <rect x="12" y="36" width="44" height="4" rx="2" fill="#555" opacity="0.5" />
+      <rect x="75" y="14" width="34" height="52" rx="8" fill="#1a2035" stroke="#2a3045" stroke-width="1" />
+      <rect x="80" y="22" width="24" height="3" rx="1.5" fill="#4dc8f0" opacity="0.7" />
+      <rect x="80" y="28" width="18" height="2" rx="1" fill="#555" />
+      <rect x="80" y="34" width="22" height="14" rx="3" fill="#1e2840" />
+    </svg>
+  </template>
+  
+  
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

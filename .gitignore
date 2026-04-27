@@ -1,0 +1,28 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Backend (not used on GitHub Pages — form uses Formspree)
+backend/
+
+# Original monolithic source & build tools
+project/
+restructure.py
+
+# Design metadata
+claude_design_solutionbowl.json
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
