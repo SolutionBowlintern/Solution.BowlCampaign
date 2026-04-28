@@ -182,7 +182,7 @@
     // =====================================================
 
     // ⚠️  REPLACE THIS with your deployed Google Apps Script URL
-    const GOOGLE_SHEET_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+    const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbzW5HpwysVN5HaFxhpGOD7dcp-9dvJkXdswXo7PG-cLGfdC1CsI_uOWWBgkGXBnaZRWpA/exec";
 
     function submitForm() {
       console.log("✅ submitForm started");
