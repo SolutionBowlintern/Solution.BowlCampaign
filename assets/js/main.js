@@ -159,7 +159,6 @@
       observer.observe(counter);
     });
   
-
     // Chip selection (iOS / Android etc.)
     document.querySelectorAll('.sb-chip').forEach(chip => {
       chip.addEventListener('click', () => {
